@@ -77,7 +77,9 @@ const questions = [
     question: "Who sent the best message on the Village this year",
     type: "multiple-choice",
     options: ["Matty K king of the D floor", "Kirky Turkey", "Trizzlit", "Boksburg", "Wilkinson", "Kelp", "Lindiwe"],
-    correctAnswer: "Boksburg"
+    correctAnswer: "Boksburg",
+    hint: "You silly poes its jam"
+
 },
 
 {
@@ -199,7 +201,7 @@ const questions = [
 ];
 
 
-
+    const hintCounts = {};
     const quizContainer = document.getElementById("quiz-container");
     const submitButton = document.getElementById("submit-btn");
 
@@ -267,8 +269,14 @@ const questions = [
 
             showNextQuestion();
         } else {
+            hintCounts[currentQuestionIndex] = (hintCounts[currentQuestionIndex] || 0) + 1;
+        if (hintCounts[currentQuestionIndex] > 3 && currentQuestion.hint) {
+            alert(currentQuestion.hint);
+        } else {
+
             alert("That is not an optimal answer please try again.");
         }
+    }
     }
 
     showQuestion(currentQuestionIndex);

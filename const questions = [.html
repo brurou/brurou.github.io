@@ -22,14 +22,15 @@ const questions = [
 {
     question: "I am tall and strong, yet nimble in flight, Over fences and hurdles, I reach great height. In fields and arenas, I make my leap, with grace and power, I soar and sweep. What am I",
     type: "text-input",
-    correctAnswer: "horse",
+    correctAnswer: "horse"
     
 },
 
 
 {
     question: "Make your way to the horse jumps (Delta Wednesday JKRC ones). When you get there complete the course as a relay."
-    
+    type: "text-input",
+    correctAnswer: "horse"
     
  
 },
@@ -63,6 +64,11 @@ const questions = [
 },
 
 {
+    question: "Why did Anakin skywalker cross the road?",
+    type: "text-input",
+    correctAnswer: "to get to the dark side"
+},
+{
     question: "Get to colorful splendour, ask for a handful of birdseed (been paid for) and bring it home for my birds",
     type: "text-input",
     correctAnswer: ""
@@ -81,16 +87,26 @@ const questions = [
     question: "Tall cold and beer flavoured, make your way to Giles and get a nice cold beer to quench that thirst.",
     type: "text-input",
     image: "beer.jpg"
-    correctAnswer: "beer"
+    correctAnswer: ""
     
 },
 
+{
+    question: "In this sequence what number would logically come next: 2,4,8,4,6,5,9,4",
+    type: "text-input",
+    image: ""
+    correctAnswer: "4"
+    
+},
 
 {
-    question: "Why did Anakin skywalker cross the road?",
+    question: "What is next in this sequence of numbers: 1, 11, 21, 1211, 111221, 312211, ______? ",
     type: "text-input",
-    correctAnswer: "to get to the dark side"
+    correctAnswer: "13112221",
+    hint: "Say each number out loud individually, i.e one, one one, two one"
 },
+
+
 
 {
     question: "Reproduce this dance, make it a master piece: https://www.youtube.com/watch?v=Rpa4IDC17bw",
@@ -118,19 +134,11 @@ const questions = [
 
 
 {
-    question: "What is next in this sequence of numbers: 1, 11, 21, 1211, 111221, 312211, ______? ",
-    type: "text-input",
-    correctAnswer: "13112221",
-    hint: "Say each number out loud individually, i.e one, one one, two one"
-},
-
-
-{
     question: "Mate in 2, enter the next two chess moves for black. Type only the moves for black i.e if the rook needs to move and then then the bishop type Rf7+ (+ for check) Be7# (# for check mate) if they in check ",
     type: "text-input",
     image: "",
     correctAnswer: "Rg1+ Rf1#",
-    hint: "Say each number out loud individually, i.e one, one one, two one"
+  
 },
 
 
