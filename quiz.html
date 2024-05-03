@@ -38,6 +38,7 @@
         max-width: 50%;
         height: auto;
         margin-bottom: 10px;
+        object-fit: contain;
     }
 
     /* Options styles */
@@ -73,20 +74,47 @@
 
 <script>
 const questions = [
+
+{
+    question: "If I am holding a bee, what do I have in my eye? ",
+    type: "text-input",
+    correctAnswer: "beauty"
+},
+
+{
+    question: "Don't you just love bees I know I do. Wouldn't it be cool if they could send us messages?",
+    type: "text-input",
+    correctAnswer: "proboscis"
+},
+
 {
     question: "Who sent the best message on the Village this year",
     type: "multiple-choice",
     options: ["Matty K king of the D floor", "Kirky Turkey", "Trizzlit", "Boksburg", "Wilkinson", "Kelp", "Lindiwe"],
-    correctAnswer: "Boksburg",
-    hint: "You silly poes its jam"
-
+    correctAnswer: "Boksburg"
 },
 
 {
     question: "I am tall and strong, yet nimble in flight, Over fences and hurdles, I reach great height. In fields and arenas, I make my leap, with grace and power, I soar and sweep. What am I",
     type: "text-input",
-    correctAnswer: "horse",
-    instruction: "Make your way to the horse jumps (Delta Wednesday JKRC ones)"
+    correctAnswer: "horse"
+    
+},
+
+
+{
+    question: "Make your way to the horse jumps (Delta Wednesday JKRC ones). When you get there complete the course as a relay.",
+    type: "text-input",
+    correctAnswer: ""
+    
+},
+
+{
+    question: "Take a photo that best resembles Bruce",
+    type: "text-input",
+    image: "bruce2.jpg",
+    correctAnswer: ""
+    
 },
 
 {
@@ -97,7 +125,13 @@ const questions = [
 },
 
 {
-    question: "Who doesn't love mans best friend? Get a picture with a doggo!",
+    question: "Two plus eleven minus one, amazingly (6)",
+    type: "text-input",
+    correctAnswer: "twelve"
+},
+
+{
+    question: "Who doesn't love mans best friend? Get a picture with a doggo (at any point during the race)!",
     type: "text-input",
     correctAnswer: ""
 },
@@ -117,6 +151,19 @@ const questions = [
     
 },
 
+{
+    question: "Why did Anakin skywalker cross the road?",
+    type: "text-input",
+    correctAnswer: "to get to the dark side"
+},
+
+{
+    question: "Get to colorful splendour, ask for a handful of birdseed (been paid for) and bring it home for my birds",
+    type: "text-input",
+    correctAnswer: "seeds"
+    
+},
+
 
 {
     question: "Intoxicating liquid from grains, sounding like the only thing to do (4)",
@@ -129,39 +176,53 @@ const questions = [
     question: "Tall cold and beer flavoured, make your way to Giles and get a nice cold beer to quench that thirst.",
     type: "text-input",
     image: "beer.jpg",
-    correctAnswer: "beer"
+    correctAnswer: "stella"
     
 },
 
 
 {
-    question: "Why did Anakin skywalker cross the road?",
+    question: "What was the name of the farm Bruce grew up on",
     type: "text-input",
-    correctAnswer: "to get to the dark side"
+    options: ["Phungamangati", "Fagazaan", "Funzelela", "Gwanovunga"],
+    correctAnswer: "Fagazaan"
+    
 },
 
 {
-    question: "Reproduce this dance, make it a master piece: https://www.youtube.com/watch?v=Rpa4IDC17bw . Enter the name of the song to get the next question",
+    question: "In this sequence what number would logically come next: 2,4,8,4,6,5,9,4",
     type: "text-input",
-    correctAnswer: "Barbaras Rhabarberbar",
-    image: "",
+    correctAnswer: "4"
+    
+},
+
+{
+    question: "What is next in this sequence of numbers: 1, 11, 21, 1211, 111221, 312211, ? ",
+    type: "text-input",
+    correctAnswer: "13112221",
+    hint: "Say each number out loud individually, i.e one, one one, two one"
+},
+
+
+
+{
+    question: "Reproduce this dance, make it a master piece:  https://www.youtube.com/watch?v=Rpa4IDC17bw",
+    type: "text-input",
+    correctAnswer: ""
+    
     
 },
 
 
-
 {
-    question: "Two plus eleven minus one, amazingly (6)",
-    type: "text-input",
-    correctAnswer: "twelve"
+    question: "What was one of Bruce's Nicknames at Michaelhouse",
+    type: "multiple-choice",
+    options: ["copper nut", "rooi kop", "blood nut", "ginger", "poes"],
+    correctAnswer: "blood nut"
+    
+    
 },
 
-
-{
-    question: "If I am holding a bee, what do I have in my eye? ",
-    type: "text-input",
-    correctAnswer: "beauty"
-},
 
 
 {
@@ -173,19 +234,11 @@ const questions = [
 
 
 {
-    question: "What is next in this sequence of numbers: 1, 11, 21, 1211, 111221, 312211, ______? ",
-    type: "text-input",
-    correctAnswer: "13112221",
-    hint: "Say each number out loud individually, i.e one, one one, two one"
-},
-
-
-{
-    question: "Mate in 2, enter the next two chess moves for black. Type only the moves for black i.e if the rook needs to move and then then the bishop the answer should look like this Rf7+ (+ for check) Be7# (# for check mate) if they in check ",
+    question: "Mate in 2, enter the next two chess moves for black. Type only the moves for black i.e if the rook needs to move and then then the bishop type Rf7+ (+ for check) Be7# (# for check mate) if they in check ",
     type: "text-input",
     image: "m2.jpg",
-    correctAnswer: "Rg1+ Rf1#",
-    hint: "Say each number out loud individually, i.e one, one one, two one"
+    correctAnswer: "Rg1+ Rf1#"
+  
 },
 
 
